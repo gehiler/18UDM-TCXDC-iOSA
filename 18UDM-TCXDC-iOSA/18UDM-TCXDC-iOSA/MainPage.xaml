@@ -4,11 +4,20 @@
              xmlns:local="clr-namespace:_18UDM_TCXDC_iOSA"
              x:Class="_18UDM_TCXDC_iOSA.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout VerticalOptions="Center" 
+                 Margin="20">
+        <Entry x:Name="emailEntry"
+               Placeholder="Email address"
+               Keyboard="Email"/>
+        <Entry x:Name="passwordEntry" 
+               Placeholder="Password"
+               IsPassword="True"/>
+        <Button x:Name="LoginButton"
+                Margin="0,50,0,0"
+                Text="Log in"
+                Clicked="LoginButton_Clicked"
+                BackgroundColor="DodgerBlue"
+                TextColor="White"/>
     </StackLayout>
 
 </ContentPage>

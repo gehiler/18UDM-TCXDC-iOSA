@@ -11,7 +11,8 @@ namespace _18UDM_TCXDC_iOSA
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

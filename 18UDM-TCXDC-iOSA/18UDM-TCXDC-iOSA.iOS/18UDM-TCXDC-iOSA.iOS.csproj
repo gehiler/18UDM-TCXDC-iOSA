@@ -64,6 +64,9 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <AppExtensionDebugBundleId />
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
@@ -127,6 +130,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
+    <ProjectReference Include="..\18UDM-TCXDC-iOSA\18UDM-TCXDC-iOSA.csproj">
+      <Project>{73607d41-33ea-4ce9-8405-367e648dbddb}</Project>
+      <Name>18UDM-TCXDC-iOSA</Name>
+    </ProjectReference>
     <ProjectReference Include="..\_18UDM_TCXDC_iOSA\_18UDM_TCXDC_iOSA.csproj">
       <Project>{ADD89C4C-5878-4B03-A959-C79A68200DE7}</Project>
       <Name>_18UDM_TCXDC_iOSA</Name>
